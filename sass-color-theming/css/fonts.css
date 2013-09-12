@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'allanwhite-io';
-  src: url("/fonts/icons/allanwhite-io.eot");
-  src: url("/fonts/icons/allanwhite-io.eot?#iefix") format("embedded-opentype"), url("/fonts/icons/allanwhite-io.woff") format("woff"), url("/fonts/icons/allanwhite-io.ttf") format("truetype"), url("/fonts/icons/allanwhite-io.svg#allanwhite-io") format("svg");
+  src: url("../fonts/icons/allanwhite-io.eot");
+  src: url("../fonts/icons/allanwhite-io.eot?#iefix") format("embedded-opentype"), url("../fonts/icons/allanwhite-io.woff") format("woff"), url("../fonts/icons/allanwhite-io.ttf") format("truetype"), url("../fonts/icons/allanwhite-io.svg#allanwhite-io") format("svg");
   font-weight: normal;
   font-style: normal;
 }
