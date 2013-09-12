@@ -1,45 +1,55 @@
 /* line 7, ../scss/app.scss */
+.container {
+  width: 100%;
+}
+
+/* line 10, ../scss/app.scss */
+.row {
+  max-width: none;
+}
+
+/* line 13, ../scss/app.scss */
 .icon-easel-logo {
   font-size: 7em;
 }
 
-/* line 10, ../scss/app.scss */
+/* line 16, ../scss/app.scss */
 .header {
   padding: 20px 0;
 }
-/* line 12, ../scss/app.scss */
+/* line 18, ../scss/app.scss */
 .header h1 {
   font-size: 5em;
   margin-bottom: 0;
 }
 
-/* line 21, ../scss/app.scss */
+/* line 27, ../scss/app.scss */
 .banner {
   position: relative;
 }
-/* line 23, ../scss/app.scss */
+/* line 29, ../scss/app.scss */
 .banner .caption {
   position: absolute;
   left: 7%;
   bottom: 15%;
 }
-/* line 27, ../scss/app.scss */
+/* line 33, ../scss/app.scss */
 .banner .caption h2 {
   color: white;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 40, ../scss/app.scss */
+/* line 46, ../scss/app.scss */
 .swatches li {
   margin: 0;
   padding: 0 0;
-  width: 9em;
-  height: 9em;
+  width: 7em;
+  height: 7em;
   color: white;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
-/* line 49, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 .swatches li p {
   padding: 5px 10px;
   margin: 0;
@@ -49,90 +59,90 @@
   width: 100%;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .swatch-0 {
   background-color: #d35131;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .swatch-1 {
   background-color: #dc745b;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .swatch-2 {
   background-color: #8a2b14;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .swatch-3 {
   background-color: #00deff;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .swatch-4 {
   background-color: #044049;
 }
 
-/* line 79, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .type-samples h3 {
   margin: 0 0 5px 0;
   padding: 0;
   line-height: 100%;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .sample-0 {
   font-family: "Oregano", cursive;
   font-size: 2em;
   color: #d35131;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .sample-1 {
   font-family: "Oswald", sans-serif;
   font-size: 3em;
   color: #dc745b;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .sample-2 {
   font-family: "Oregano", cursive;
   font-size: 4em;
   color: #8a2b14;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .sample-3 {
   font-family: "Lato", sans-serif;
   font-size: 5em;
   color: #00deff;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .sample-4 {
   font-family: "Lato", sans-serif;
   font-size: 3em;
   color: #044049;
 }
 
-/* line 94, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 .sample-0 {
   letter-spacing: 0.3em;
 }
 
-/* line 97, ../scss/app.scss */
+/* line 103, ../scss/app.scss */
 .sample-1 {
   text-transform: uppercase;
 }
 
-/* line 100, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .sample-3 {
   font-weight: 900;
   letter-spacing: -0.05em;
 }
 
-/* line 104, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .texture-block {
   overflow: hidden;
   position: relative;
@@ -146,14 +156,14 @@
   text-align: center;
   font-size: 6em;
 }
-/* line 118, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .texture-block .logo {
   position: absolute;
   left: 20%;
   top: 20%;
   z-index: 100;
 }
-/* line 124, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 .texture-block .bg {
   position: absolute;
   left: 0;

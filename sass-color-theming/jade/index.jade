@@ -26,25 +26,22 @@ html
     //- End Header and Nav 
     //- First Band (Image) 
     .row
-      .large-12.columns.banner
+      .large-8.columns.banner
         img(src='images/featured.jpg')
         .caption
           h2 Waves. We've got 'em in Oregon. \m/
           button.medium
             | Let's catch some.
         hr
-    //- Second Band (Image Left with Text) 
-    .row 
-      .large-12.large-centered.columns
-        h3 Example swatches
-        ul.swatches.large-block-grid-6
-          each swatch, i in swatches
-            li(class='swatch-'+i)
-              p #{swatch}
+      //- Second Band (Image Left with Text) 
+      .large-4.columns.type-samples
+        h2 Type Attributes
+        each sample, i in samples
+          h3(class='sample-'+i) #{sample}
         hr
     //- Third Band (Image Right with Text) 
     .row
-      .large-6.columns
+      .large-8.columns
         h3 This is a content section.
         p
           | Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, 
@@ -55,10 +52,12 @@ html
           .logo.icon-atom
         p
           | Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.
-      .large-6.columns.type-samples
-        h2 Type Attributes
-        each sample, i in samples
-          h3(class='sample-'+i) #{sample}
+      .large-4.columns
+        //- h3 Example swatches
+        ul.swatches.large-block-grid-3
+          each swatch, i in swatches
+            li(class='swatch-'+i)
+              p #{swatch}
     //- Footer 
     footer.row
       .large-12.columns

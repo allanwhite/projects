@@ -4,6 +4,12 @@
 @import "compass/css3";
 @import "_typography";
 
+.container{
+	width: 100%;
+}
+.row{
+	max-width: none;
+}
 .icon-easel-logo{
 	font-size: 7em;
 }
@@ -41,8 +47,8 @@
 		margin: 0;
 		padding: 0 0;
 		// border: 5px solid $black;
-		width: 9em;
-		height: 9em;
+		width: 7em;
+		height: 7em;
 		color: white;
 		// background-color: gray; //default
 		text-shadow: 3px 3px 8px $trans-black;
