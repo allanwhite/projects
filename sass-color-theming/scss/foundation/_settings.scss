@@ -92,10 +92,11 @@ $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !defau
 
 // ==================== COLOR THEME =======================
 
-// Blue & red duotone - 'Love Alaska' theme
+// orangy
 $trans:                     rgba(0, 0, 0, 0);
 $trans-black:               rgba(#000, 0.6);
 $black:                     rgba(#000, 1); // it's black!
+
 $theme-color-primary:       #d35131; // orangy
 $theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
 $theme-color-med: 			    adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
@@ -107,6 +108,42 @@ $theme-color-compl: 		    #00deff; // bright aqua
 $theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -35%, $saturation: -10%);
 $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
 $theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
+
+// $theme-color-primary:       #5d7643; // green
+// $theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
+// $theme-color-med:           adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
+// $theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // deep 
+// $theme-color-alt:           adjust-color($theme-color-primary, $lightness: -20%, $saturation: 10%); // dark 
+// $theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
+// $theme-color-body:          $black;
+// $theme-color-compl:         #432d5d; // purple
+// $theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -15%, $saturation: -10%);
+// $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+// $theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
+
+// $theme-color-primary:       #2f6888; // bg
+// $theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
+// $theme-color-med:           adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
+// $theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // deep 
+// $theme-color-alt:           adjust-color($theme-color-primary, $lightness: -20%, $saturation: 10%); // dark 
+// $theme-color-page:          #e9e1c3;// white - used in many variables that need white; will tint everything! 
+// $theme-color-body:          $black;
+// $theme-color-compl:         #83003e; // rp
+// $theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -15%, $saturation: -10%);
+// $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+// $theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
+
+// $theme-color-primary:       #73c6df; // bg
+// $theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
+// $theme-color-med:           adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
+// $theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // deep 
+// $theme-color-alt:           adjust-color($theme-color-primary, $lightness: -20%, $saturation: 10%); // dark 
+// $theme-color-page:          #114f66;// white - used in many variables that need white; will tint everything! 
+// $theme-color-body:          white;
+// $theme-color-compl:         #cb0053; // rp
+// $theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -15%, $saturation: -10%);
+// $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+// $theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
 
 // ==================== ++ =======================
 
