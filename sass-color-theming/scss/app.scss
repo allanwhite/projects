@@ -101,6 +101,36 @@ $s: 2em 3em 4em 5em 3em; // font-sizes
 	font-weight: 900;
 	letter-spacing: -0.05em;
 }
+.texture-block{
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	padding: 10px;
+	width: 160px;
+	height: 160px;
+	background-color: $theme-color-compl-dark;
+	color: $theme-color-compl;
+	text-align: center;
+	font: {
+		size: 6em;
+	}
+	.logo{
+		position: absolute;
+		left: 20%;
+		top: 20%;
+		z-index: 100;
+	}
+	.bg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		font-size: 3em;
+		color: darken($theme-color-compl-dark, 8%);
+		@include rotate(15deg);
+	}
+}
 
 // font-family: 'Lato', sans-serif;
 // font-family: 'Libre Baskerville', serif;
