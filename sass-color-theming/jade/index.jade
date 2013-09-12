@@ -1,16 +1,20 @@
+swatches = ['primary', 'medium', 'alt', 'compliment', 'compliment-dark']
+samples = ['Elegance', 'Boldness', 'personality', 'clarity', 'Oregonian-ness']
+
 !!! 5
 html
   head
     include includes/head
   body
     //- Header and Nav 
-    .row
-      .large-3.columns
-        h1
+    .row.header
+      .large-2.columns
+        span
           a(href='#top', title='Back to top')
             .logo.icon-easel-logo
-      .large-9.columns
-        ul.button-group.right
+      .large-10.columns
+        h1.right Sassy Style Tiles!
+        //- ul.button-group.right
           li
             a.button(href='#') Link 1
           li
@@ -22,32 +26,34 @@ html
     //- End Header and Nav 
     //- First Band (Image) 
     .row
-      .large-12.columns
-        img(src='http://placehold.it/1000x400&text=[img]')
+      .large-12.columns.banner
+        img(src='/images/featured.jpg')
+        .caption
+          h2 Waves. We've got 'em in Oregon. \m/
+          button.medium
+            | Let's catch some.
         hr
     //- Second Band (Image Left with Text) 
-    .row
-      .large-4.columns
-        img(src='http://placehold.it/400x300&text=[img]')
-      .large-8.columns
-        h4 This is a content section.
-        .row
-          .large-6.columns
-            p
-              | Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
-          .large-6.columns
-            p
-              | Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.
+    .row 
+      .large-12.columns
+        h3 Example swatches
+        ul.swatches.large-block-grid-6
+          each swatch, i in swatches
+            li(class='swatch-'+i)
+              p #{swatch}
+        hr
     //- Third Band (Image Right with Text) 
     .row
-      .large-8.columns
+      .large-6.columns
         h4 This is a content section.
         p
           | Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
         p
           | Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.
-      .large-4.columns
-        img(src='http://placehold.it/400x300&text=[img]')
+      .large-6.columns.type-samples
+        h2 Type Attributes
+        each sample, i in samples
+          h3(class='sample-'+i) #{sample}
     //- Footer 
     footer.row
       .large-12.columns

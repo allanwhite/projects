@@ -3,3 +3,131 @@
 //@import "lib/_mixins";
 @import "compass/css3";
 @import "_typography";
+
+.icon-easel-logo{
+	font-size: 7em;
+}
+.header{
+	padding: 20px 0;
+	h1{
+		font:{
+			size: 5em;
+		}
+		margin-bottom: 0;
+		// padding-top: 1.5em;
+	}
+
+}
+.banner{
+	position: relative;
+	.caption{
+		position: absolute;
+		left: 7%;
+		bottom: 15%;
+		h2{
+			color: $theme-color-page;
+			padding: 5px;
+			background-color: $trans-black;
+		}
+		button{
+
+		}
+
+	}
+}
+
+.swatches{
+	li{
+		margin: 0;
+		padding: 0 0;
+		// border: 5px solid $black;
+		width: 9em;
+		height: 9em;
+		color: white;
+		// background-color: gray; //default
+		text-shadow: 3px 3px 8px $trans-black;
+		p{
+			padding: 5px 10px;
+			margin: 0;
+			font: {
+				size: 0.8em;
+				weight: bold;
+			}
+			background-color: $trans-black;
+			width: 100%;
+		}
+		// iterate thru colors
+
+		// $i:1;
+		// @each $c in $swatch-colors {
+		//     &.swatch-#{$i} {
+		//         background-color: nth($c, $i);
+		//     }
+		// }
+		// $i: $i+1;
+	}
+}
+$swatch-colors: $theme-color-primary $theme-color-med $theme-color-alt $theme-color-compl $theme-color-compl-dark;
+@for $i from 0 to length($swatch-colors) {
+    .swatch-#{$i} {
+        background-color: unquote(nth($swatch-colors, $i+1));
+    }
+}
+$samples: $fontStackReg $fontStackBold $fontStackReg $fontStackBody $fontStackBody;
+$s: 2em 3em 4em 5em 3em; // font-sizes
+.type-samples{
+	h3{
+		margin: 0 0 5px 0;
+		padding: 0;
+		line-height: 100%;
+	}
+}
+@for $i from 0 to length($samples) {
+    .sample-#{$i} {
+        font: {
+        	family: unquote(nth($samples, $i+1));
+        	size: unquote(nth($s, $i+1));
+        }
+        color: unquote(nth($swatch-colors, $i+1));
+    }
+}
+.sample-0{
+	letter-spacing: 0.3em;
+}
+.sample-1{
+	text-transform: uppercase;
+}
+.sample-3{
+	font-weight: 900;
+	letter-spacing: -0.05em;
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Libre Baskerville', serif;
+// font-family: 'Oregano', cursive;
+// font-family: 'Oswald', sans-serif;
+
+//$fontStackReg:          "quadon", Helvetica, Arial, sans-serif !default;
+// $fontStackReg:          'Oregano', cursive;
+// $fontStackBold:     	 'Oswald', sans-serif;
+// $fontStackBoldItal:    	$fontStackBold;
+// $fontStackItal:    		  $fontStackReg;
+// $fontStackBody:     	  'Lato', sans-serif;
+// $fontStackBodyBold:     'Lato', sans-serif;
+// $fontStackLight:        'Lato', sans-serif;
+// $sansFontFamily:        $fontStackBody;
+// $serifFontFamily:       Georgia, serif !default;
+// $fontStackQuote:        $serifFontFamily;
+// $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+// samples = ['Elegant', 'bold', 'personality', 'clarity', 'Oregonian-ness']
+// $theme-color-primary:       #d35131; // orangy
+// $theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
+// $theme-color-med:           adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
+// $theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // deep 
+// $theme-color-alt:           adjust-color($theme-color-primary, $lightness: -20%, $saturation: 10%); // dark 
+// $theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
+// $theme-color-body:          $black;
+// $theme-color-compl:         #00deff; // bright aqua
+// $theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -35%, $saturation: -10%);
+// $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray

@@ -79,7 +79,7 @@ $experimental: true;
 
 //$fontStackReg:          "quadon", Helvetica, Arial, sans-serif !default;
 $fontStackReg:          'Oregano', cursive;
-$fontStackBold:     	  $fontStackReg;
+$fontStackBold:     	  'Oswald', sans-serif; //$fontStackReg;
 $fontStackBoldItal:    	$fontStackBold;
 $fontStackItal:    		  $fontStackReg;
 $fontStackBody:     	  'Lato', sans-serif;
@@ -224,7 +224,7 @@ $block-grid-media-queries: true;
 
 // Control header font styles
 
-$header-font-family: $fontStackBold;
+$header-font-family: $fontStackReg;
 $header-font-weight: normal;
 $header-font-style: normal;
 //$header-font-color: $theme-color-med; // pale medium-dark shade
